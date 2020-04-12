@@ -5,3 +5,5 @@ function isSameNum(num1, num2) {
     return false;
   }
 }
+
+isSameNum(2, 2)
