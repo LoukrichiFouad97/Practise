@@ -11,7 +11,7 @@
 // isValidPassword('dogLuvr123!', 'dogLuvr') //false
 // isValidPassword('hello1', 'dogLuvr') //false
 
-function isValidPassword(password, username) {
+const isValidPassword = (password, username) => {
 	// if (password.length <= 8) {
 	// 	return false;
 	// } else if (password.indexOf(username) !== -1) {

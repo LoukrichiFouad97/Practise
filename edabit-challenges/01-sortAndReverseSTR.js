@@ -1,4 +1,4 @@
-function challange(str) {
+const  challange = (str) => {
 	const arr = Array.from(str);
 	const sortedArr = arr.sort().join("");
 	const reversedString = arr.sort().reverse().join("");

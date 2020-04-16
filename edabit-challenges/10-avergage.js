@@ -2,7 +2,7 @@
 //avg([0,50]) //25
 //avg([75,76,80,95,100]) //85.2
 
-function avg(numbers) {
+const avg = (numbers) => {
 	let sum = 0;
 	// numbers.forEach((num) => {
 	// 	sum += num;

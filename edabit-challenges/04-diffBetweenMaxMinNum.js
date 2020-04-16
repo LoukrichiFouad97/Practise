@@ -1,4 +1,4 @@
-function diffMaxMin(arr) {
+const diffMaxMin = (arr) => {
   console.log(arr.sort());
 }
 

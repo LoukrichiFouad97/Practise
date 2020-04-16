@@ -1,4 +1,4 @@
-function remainder(x, y) {
+const remainder = (x, y) => {
   return x % y
 }
 remainder(1, 3)

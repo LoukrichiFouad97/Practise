@@ -6,7 +6,7 @@
 // isPangram('The five boxing wizards jump quickly') //true
 // isPangram('The five boxing wizards jump quick') //false
 
-function isPangram(sentence) {
+const isPangram = (sentence) => {
 	// const pangram = "abcdefghijklmnopqrstuvwxyz";
 	let lowerCase = sentence.toLowerCase();
 	for (let latter of "abcdefghijklmnopqrstuvwxyz") {

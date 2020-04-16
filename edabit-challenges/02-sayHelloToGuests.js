@@ -13,7 +13,7 @@
 
  */
 
-function greetPeople(names) {
+const  greetPeople = (names) => {
 	return names.map((name) => `Hello ${name}`).join(", ");
 }
 
