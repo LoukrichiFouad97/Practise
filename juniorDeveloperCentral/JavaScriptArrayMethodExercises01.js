@@ -96,16 +96,33 @@ const people = [
 // );
 
 // 2) Who are the people that are currently older than 30?
-console.log(
-	people.filter((dob) => {
-		const date =
-			new Date().getFullYear() - parseInt(new Date(dob.DOB).getFullYear());
-		return date > 30;
-	})
-);
+// console.log(
+// 	people.filter((person) => {
+// 		const filtered =
+// 			new Date().getFullYear() - Number(new Date(person.DOB).getFullYear());
+// 		return filtered > 30;
+// 	})
+// );
 
 // 3) Get a list of the people's full name (firstName and lastName).
-
+// console.log(
+// 	people.map((person) => {
+// 		return `First Name: ${person.firstName}, Last Name: ${person.lastName}`;
+// 	})
+// );
 // 4) Get a list of people in the array ordered from youngest to oldest.
-
+// console.log(
+// 	people.sort((personA, personB) => {
+// 		const person1 = new Date(personA.DOB);
+// 		const person2 = new Date(personB.DOB);
+// 		// return person1 - person2;
+// 		if (person1 < person2) {
+// 			return -1;
+// 		} else if (person1 > person2) {
+// 			return 1;
+// 		} else {
+// 			return 0;
+// 		}
+// 	})
+// );
 // 5) How many people are there in each department?
