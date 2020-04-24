@@ -125,4 +125,13 @@ const people = [
 // 		}
 // 	})
 // );
+
 // 5) How many people are there in each department?
+console.log(
+	people.reduce((acc, person) => {
+		return {
+			...acc,
+			[person.department]: acc[person.department] + 1 || 1,
+		};
+	}, {})
+);
