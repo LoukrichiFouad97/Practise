@@ -71,18 +71,34 @@ const comments = [
 ];
 
 // Exercises
-
 // 1) What is Madison Marshall's user id?
-users.find((usr) => usr.firstName == "Madison" && usr.lastName == "Marshall");
+// users.find((usr) => usr.firstName == "Madison" && usr.lastName == "Marshall");
 
 // 2) Who wrote the first comment (assuming the first comment is in position 0 of the comments array)
-users.find((user) => user.id == comments[0].userId);
+// users.find((user) => user.id == comments[0].userId);
 
 // 3) Which user commented 'OK great thanks'?
-const usrId = comments.find((cmnt) => cmnt.text == "OK great thanks").userId;
-const userFound = users.find((user) => user.id === usrId);
-console.log(userFound);
+// const usrId = comments.find((cmnt) => cmnt.text == "OK great thanks").userId;
+// const userFound = users.find((user) => user.id === usrId);
+// console.log(userFound);
 
 // 4) Add the user's first and last name to each comment in the comments array
+// console.log(
+// 	comments.map((comment) => {
+// 		const { firstName, lastName } = users.find(
+// 			(user) => user.id == comment.userId
+// 		);
+// 		return {
+// 			...comment,
+// 			firstName,
+// 			lastName,
+// 		};
+// 	})
+// );
 
 // 5) Get a list of the users who haven't commented
+console.log(
+	users.filter((user) => {
+		!comments.find((comment) => comment.userId == user.id);
+	})
+);
